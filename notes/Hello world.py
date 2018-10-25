@@ -33,7 +33,7 @@ print(2 ** 100)
 
 # Taking input
 name = input("What is your name?")
-print ("Hello %s." % name)
+print("Hello %s." % name)
 
 age = input("How old are you? >_")
 print("%s?!? You belong in a museum." % age)

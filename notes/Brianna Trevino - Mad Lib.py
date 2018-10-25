@@ -1,0 +1,6 @@
+job = input("Name a dream job")
+noun = input("Name a noun")
+animal = input("Name an animal")
+Building_type = input("Name a living space")
+adjective = input("Name an adjective")
+adjective2 = input("Name an adjective")
