@@ -121,12 +121,12 @@ if sunny:
 
 
 def grade_calc(percentage):
-    eli if percentage >= 90:
+    elif percentage >= 90:
         return "A"
     elif percentage >= 80:
         return "B"
     elif percentage >= 70:
-       f percentage >= 60:
+      if percentage >= 60:
         return "D"
     else:
         return "F"
@@ -138,7 +138,7 @@ print()
 
 # "Random" Notes
 import random # This should be on line 1
-print(random. randint(0, 100)))
+print(random. randint(0, 100))
 
 #Equality Statements
 print(5 > 3)

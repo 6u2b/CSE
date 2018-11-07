@@ -1,5 +1,5 @@
-numer = 3
-guesses = 5
+import random
+print(random. randint(0, 10))
 while guesses > 0:
     num = int(input("What's a number from 1 to 10"))
     if num >= 4:
