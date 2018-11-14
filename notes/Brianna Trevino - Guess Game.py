@@ -1,14 +1,15 @@
 import random
-print(random. randint(0, 10))
+
+number = random.randint(1, 10)
 guesses = 5
 while guesses > 0:
     num = int(input("What's a number from 1 to 10"))
-    if num >= 4:
+    if num > number:
         print("Too high")
         guesses = guesses -1
-    elif num <= 2:
+    elif num < number:
         print("a little higher")
-    elif num == 3:
+    elif num == number:
         print("Correct")
         guesses = 0
 
