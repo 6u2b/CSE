@@ -39,5 +39,68 @@ print(new_list[1:4])
 print(new_list[1:])
 print(new_list[:4])
 
+food_list = ["ham", "turkey", "pie", "chicken", "potatoes", "salad", "chili", "salmon", "tuna", "sushi", "pizza",
+"lasagna", "carne asada", "eggs", "hamburger", "cheese", "tamales", "pancakes", "beans", "rice", "churros"]
+
+# Adding stuff to a list
+food_list.append("bacon")
+food_list.append("eggs")
+# Notice that everything is object.method(perameters)
+print(food_list)
+
+# Removing things from a list
+food_list.remove("salad")
+print(food_list)
+
+"""
+1. Make a new list with 3 items
+2. Add a 4th item to the list
+3. Remove one of the first three items from the list
+"""
+# Tuples are immutable
+letter_list = ["a", "b", "c"]
+letter_list.append("d")
+letter_list.remove("a")
+print(letter_list)
+
+# Also removing stuff from a list
+print(food_list)
+food_list.pop(0)
+print(food_list)
+
+string1 = "turquoise"
+list1 = list(string1)
+print(list1)
+
+for i in range(len(list1)): # i goes through all indicies
+    if list1[i] == "u":
+        list1.pop(i)
+        list1.insert(i, "*")
+
+# Turn a list into a string
+print("".join(list1))
+
+'''
+for character in list1
+    if character ==
+:
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
