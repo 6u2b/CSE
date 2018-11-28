@@ -84,6 +84,7 @@ print("".join(list1))
 for character in list1
     if character ==
 :
+
 '''
 
 
