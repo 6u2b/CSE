@@ -23,4 +23,6 @@ while money > 0:
         best_round = round_
     print("your new balance is %s" % money)
     round_ = round_ + 1
+    print("%s" % round_)
+    print("You should have stopped when you had %s in round %s" % (highscore, best_round))
     print()
