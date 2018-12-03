@@ -80,12 +80,13 @@ for i in range(len(list1)): # i goes through all indicies
 # Turn a list into a string
 print("".join(list1))
 
-'''
-for character in list1
-    if character ==
-:
+# Function Notes
+# a**2 + b**2 = c**2
+def pythagorean(a, b):
+    return (a**2 + b**2)**(1/2)
 
-'''
+
+print(pythagorean(3, 4))
 
 
 
