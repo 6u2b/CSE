@@ -1,3 +1,4 @@
+import math
 #1
 def challenge1 (Firstname, lastname):
     print(lastname, Firstname)
@@ -5,5 +6,9 @@ def challenge1 (Firstname, lastname):
 challenge1("Brianna", "Trevino")
 
 
-#2
-def challenge2 (height)
+#6
+def challenge2(r):
+    V = 4.0 / 3.0 * math.pi * r ** 3
+    return V
+print(challenge2(9))
+print()
