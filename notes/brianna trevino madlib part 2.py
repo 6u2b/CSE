@@ -1,0 +1,18 @@
+word = []
+word.append(input("Name a dream job. >_"))
+word.append(input("Name an animal. >_"))
+word.append(input("Name a noun. >_"))
+word.append(input("Name a living space. >_"))
+word.append(input("Name a word that ends in ing. >_"))
+word.append(input("Name a verb. >_"))
+word.append(input("Name another verb. >_"))
+word.append(input("Name a tool. >_"))
+word.append(input("Name another word that ends in ing. >_"))
+word.append(input("Name an adjective. >_"))
+
+print("About a week ago, a %s had went out to feed his %s like any other day." % (word[0], word[1]))
+print("He seen this strange %s but thought nothing of it." % word[2])
+print("He continued with his day feeding every animal at his %s." % word[3])
+print("He tried %s to get it out of the away since it might %s or %s his livestock." % (word[4], word[5], word[6]))
+print("He came out with his %s bzut he noticed a %s tint." % (word[7], word[8]))
+print("He thought this was going to be his day, his time to get % and make it in the world." % word[9])
