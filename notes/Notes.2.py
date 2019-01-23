@@ -89,20 +89,6 @@ def pythagorean(a, b):
 print(pythagorean(3, 4))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import string
+print(list(string.ascii_letters_))
+print(string.digits)

@@ -20,3 +20,4 @@ print(colors[2])
 len(colors)
 print(colors)
 
+list =
