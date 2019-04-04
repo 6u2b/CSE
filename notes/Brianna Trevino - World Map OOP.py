@@ -9,5 +9,5 @@ class Room(object):
         self.characters = []
 
 
-BEAN_ROOM = Room('The Bean Pool', None, None, None, 'BEAN_BAR', "There are a couple beans swimming here")
+BEAN_ROOM = Room('The Bean Pool', None, None, None, 'BEAN_BAR', "There are a couple beans swimming here" )
 BEAN_BAR = Room('The Bean Bar', None, None, 'BEAN_Room', None, "There are a couple beans drinking legal drinks here")

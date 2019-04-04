@@ -1,7 +1,7 @@
 world_map = {
     'Bean_Room': {
         'NAME': "Bean Room",
-        'DESCRIPTION': "This is the ",
+        'DESCRIPTION': "You are in the bean room ",
         'PATHS': {
             'NORTH': "BEAN_LOT",
             'WEST': "BEAN_POOL"
@@ -22,7 +22,7 @@ world_map = {
         'DESCRIPTION': "There are a couple beans swimming here",
         'PATHS': {
             'SOUTH': 'BEAN_BAR',
-            'EAST': 'BEAN_LOT'
+            'EAST': 'Bean_Room'
         }
     },
     'BEAN_BAR': {
@@ -63,55 +63,55 @@ world_map = {
         'DESCRIPTION': "The storage units are located here",
         'PATHS': {
             'WEST': 'STORAGE_ROOM',
-            'NORTH': 'KITCHEN'
+            'NORTH': 'DINING_ROOM'
        }
     },
     'DINING_ROOM': {
         'NAME': "The Dining Room",
         'DESCRIPTION': "The dining room is where the beans eat.",
         'PATHS': {
-            'WEST': 'CLASS_ROOM',
-            'NORTH': ''
+            'WEST': 'HALLWAY_ROOM',
+            'NORTH': 'HALLWAY2_ROOM'
         }
     },
     'HALLWAY_ROOM': {
         'NAME': "The Main Hallway",
         'DESCRIPTION': "Main Hallway of the House .",
         'PATHS': {
-            'WEST': 'CLASS_ROOM',
-            'NORTH': ''
+            'SOUTH': 'STORAGE_ROOM',
+            'NORTH': 'Dragon_ROOM'
         }
     },
     'HALLWAY2_ROOM': {
         'NAME': "The Main Hallway",
         'DESCRIPTION': "Main Hallway of the House .",
         'PATHS': {
-            'WEST': 'CLASS_ROOM',
-            'NORTH': ''
+            'WEST': 'Dragon_ROOM',
+            'SOUTH': 'DINING_ROOM'
         }
     },
     'Dragon_ROOM': {
         'NAME': "The Dragon's dungeon",
         'DESCRIPTION': "a dragon lives here.",
         'PATHS': {
-            'WEST': '',
-            'NORTH': ''
+            'EAST': 'HALLWAY2_ROOM',
+            'NORTH': 'CAFE_ROOM'
         }
     },
     'CAFE_ROOM': {
         'NAME': "The Dragon's cafe",
         'DESCRIPTION': "a dragon drinks coffee here.",
         'PATHS': {
-            'WEST': '',
-            'NORTH': ''
+            'WEST': 'Bean_Lot',
+            'SOUTH': 'Dragon_ROOM'
         }
     },
     'FROG_ROOM': {
         'NAME': "The Frogs room",
         'DESCRIPTION': "The frogs live here after being captured by the dragon.",
         'PATHS': {
-            'WEST': '',
-            'NORTH': ''
+            'WEST': 'CAFE_ROOM',
+            'SOUTH': 'HALLWAY2_ROOM'
         }
     },
     'LAB_ROOM': {
@@ -119,19 +119,11 @@ world_map = {
         'DESCRIPTION': "A scientist lives here and experiments on little beans then turns them "
                        "into dragons to capture frogs",
         'PATHS': {
-            'WEST': '',
-            'NORTH': ''
-        }
-    },
-    'HALLWAY3_ROOM': {
-        'NAME':"The secondary hallway",
-        'DESCRIPTION': "Hallway connecting the kitchen and garage",
-        'PATHS': {
-            'WEST': '',
+            'WEST': 'BEAN_BAR',
+            'NORTH': 'Bean_Room'
         }
     },
 }
-
 
 playing = True
 current_node = world_map['Bean_Room']
