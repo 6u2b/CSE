@@ -1,5 +1,5 @@
 world_map = {
-    'Bean_Room': {
+    'BEAN_ROOM': {
         'NAME': "Bean Room",
         'DESCRIPTION': "You are in the bean room ",
         'PATHS': {
@@ -11,9 +11,8 @@ world_map = {
         'NAME': "The Bean Lot",
         'DESCRIPTION': "There are a couple beans parked here",
         'PATHS': {
-            'SOUTH': 'Bean_Room',
+            'SOUTH': 'BEAN_ROOM',
             'WEST': 'BEAN_POOL'
-
         }
     },
 
@@ -22,7 +21,7 @@ world_map = {
         'DESCRIPTION': "There are a couple beans swimming here",
         'PATHS': {
             'SOUTH': 'BEAN_BAR',
-            'EAST': 'Bean_Room'
+            'EAST': 'BEAN_ROOM'
         }
     },
     'BEAN_BAR': {
@@ -47,7 +46,6 @@ world_map = {
         'PATHS': {
             'WEST': 'BEAN_COMPUTER_LAB',
             'EAST': 'STORAGE_ROOM'
-
         }
     },
     'STORAGE_ROOM': {
@@ -64,7 +62,7 @@ world_map = {
         'PATHS': {
             'WEST': 'STORAGE_ROOM',
             'NORTH': 'DINING_ROOM'
-       }
+        }
     },
     'DINING_ROOM': {
         'NAME': "The Dining Room",
@@ -79,18 +77,18 @@ world_map = {
         'DESCRIPTION': "Main Hallway of the House .",
         'PATHS': {
             'SOUTH': 'STORAGE_ROOM',
-            'NORTH': 'Dragon_ROOM'
+            'NORTH': 'DRAGON_ROOM'
         }
     },
     'HALLWAY2_ROOM': {
         'NAME': "The Main Hallway",
         'DESCRIPTION': "Main Hallway of the House .",
         'PATHS': {
-            'WEST': 'Dragon_ROOM',
+            'WEST': 'DRAGON_ROOM',
             'SOUTH': 'DINING_ROOM'
         }
     },
-    'Dragon_ROOM': {
+    'DRAGON_ROOM': {
         'NAME': "The Dragon's dungeon",
         'DESCRIPTION': "a dragon lives here.",
         'PATHS': {
@@ -98,12 +96,14 @@ world_map = {
             'NORTH': 'CAFE_ROOM'
         }
     },
+
     'CAFE_ROOM': {
         'NAME': "The Dragon's cafe",
         'DESCRIPTION': "a dragon drinks coffee here.",
         'PATHS': {
-            'WEST': 'Bean_Lot',
-            'SOUTH': 'Dragon_ROOM'
+            'WEST': 'BEAN_LOT',
+            'SOUTH': 'DRAGON_ROOM',
+            'EAST': 'FROG_ROOM'
         }
     },
     'FROG_ROOM': {
@@ -120,13 +120,13 @@ world_map = {
                        "into dragons to capture frogs",
         'PATHS': {
             'WEST': 'BEAN_BAR',
-            'NORTH': 'Bean_Room'
+            'NORTH': 'BEAN_ROOM'
         }
     },
 }
 
 playing = True
-current_node = world_map['Bean_Room']
+current_node = world_map['BEAN_ROOM']
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST']
 
 while playing:
